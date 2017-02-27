@@ -1,0 +1,40 @@
+/*-------------------------------*/
+/*     CUSTOM MENU VARIABLES     */
+/*-------------------------------*/
+
+// COLORS
+$orange: #f99d1c;
+$black: #231f20;
+$grey: #97a6b4;
+$light-grey: #f1f1f1;
+$white: #ffffff;
+$teaming-green: #3ca803;
+$bg-color: $orange;
+
+// TEXT COLOR
+$text-color: $white;
+
+// SIDEBAR LINK COLOR VARIABLES
+$side-color-1: $black;
+$side-color-4: $bg-color;
+$side-color-5: lighten($side-color-4, 2%);
+$side-color-3: darken($side-color-4, 2%);
+$side-color-2: darken($side-color-3, 2%);
+$side-color-6: lighten($side-color-5, 2%);
+$side-color-7: lighten($side-color-6, 2%);
+$side-color-8: lighten($side-color-7, 2%);
+$side-color-9: lighten($side-color-8, 2%);
+$side-color-10: lighten($side-color-9, 2%);
+$side-color-11: lighten($side-color-10, 2%);
+
+// ARCA-MENU COLOR
+$arca-menu-color-closed: $orange;
+$arca-menu-color-open: $orange;
+
+// WIDTH VARIABLES
+$width1: 220px;
+$width2: 100px;
+$full-width: 100%;
+
+// HEIGHT VARIABLES
+$full-height: 100%;
