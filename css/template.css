@@ -1362,7 +1362,7 @@ li.next a:hover:not(.active) {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .main-menu .sidebar-nav li a.dropdown-toggle[aria-expanded="false"]:hover, .main-menu .sidebar-nav li a.dropdown-toggle[aria-expanded="true"]:hover {
-  background-color: initial;
+  background-color: transparent;
 }
 .main-menu .sidebar-nav li .dropdown-header {
   color: #f99d1c;

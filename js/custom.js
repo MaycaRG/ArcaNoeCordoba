@@ -54,8 +54,8 @@ $(document).ready(function($) {
         $('.main-menu .dropdown').click(function() {
             $('.main-menu .dropdown').toggleClass('open');
         });
-        // Add search button logic
         searchButtonLogic();
+        detectIE();
 
     } else { // If the user is using an old native browser
         $("#wrap").wrap("<div class='native-browser'></div>");
@@ -436,6 +436,25 @@ $(document).ready(function($) {
             $(".native-browser .main-menu .sidebar-nav")
                 .css("height", $(window).height() - 88);
         });
+    }
+
+    /**
+     * Detect if the user is using IE10 or older
+     * @author Mario: https://codepen.io/gapcode/pen/vEJNZN
+     */
+    function detectIE() {
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf('MSIE ');
+        if (msie > 0) {
+            $('.teaming span').css('opacity', '1');
+            $('.teaming span:first-child').after(': ');
+            $('.paypal span').css('opacity', '1');
+            $('.paypal span:first-child').after(': ');
+            $('.cajasur span').css('opacity', '1');
+            $('.cajasur span:first-child').after(': ');
+            $('.main-menu .sidebar-nav li a:hover')
+                .css('background-color', 'transparent !important');
+        }
     }
 
     /* END FUNCTIONS*/
